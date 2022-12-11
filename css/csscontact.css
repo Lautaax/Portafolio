@@ -204,84 +204,7 @@ color: #AAC6C6;
     background: #2C3456 !important;
 }
 
-*,
-        *:before,
-        *:after {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            font: var(--font-style);
-            text-decoration: none;
-            color: rgb(250, 246, 246);
-        }
-        
 
-
-
-button:hover {
-    cursor: pointer;
-    box-shadow: 0px 4px 4px #DF00FF;
-}
-
-button {
-    color: rgb(247, 247, 247);
-    border-radius: 25px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    outline: none;
-    border: 0;
-    overflow: hidden;
-    transition: all 0.5s;
-}
-
-button:hover:before {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-button:before {
-    content: attr(data-hover);
-    position: absolute;
-    top: 0.6em;
-    left: 0;
-    width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: bold;
-    opacity: 0;
-    font-size: 40px;
-    transform: translate(-100%, 0);
-    transition: all .3s ease-in-out;
-}
-
-button:hover div {
-    opacity: 100;
-    transform: translate(140%, 0)
-}
-
-button div {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    transition: all .3s ease-in-out;
-}
-
-.titulo{
-    color: #00ff15;
-    font-weight: bold
-    }
-
-.botongit{
-    color: #060606;
-    font-size: 24px;
-    font-weight:bolder;
-    background-color: rgba(206, 243, 240, 0.712) ;
-    border-radius: 25px;
-    letter-spacing: 3px;
-    padding: 15px 50px;
-}
 
 @media only screen and (max-width: 800px) {
 
@@ -292,3 +215,113 @@ button div {
 
     
   }
+
+
+ body {
+    color: #C0C0C0;
+    font-family: Arial, san-serif;
+ }
+ 
+ 
+ /* Contacto */
+ h1 {
+    margin: 10px 0 0 0;
+ }
+ h4{
+    margin: 0 0 20px 0;
+ }
+ #contact-form {
+    background-color:rgba(72, 72, 72, 0.104);
+    padding: 10px 20px 30px 20px;
+    max-width:100%;
+    float: left;
+    left: 50%;
+    position: absolute;
+    margin-top:30px;
+    margin-left: -260px;
+    border-radius:7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+ }
+ #contact-form input,   
+ #contact-form select,   
+ #contact-form textarea,   
+ #contact-form label { 
+    font-size: 15px;  
+    margin-bottom: 2px;
+    font-family: Arial, san-serif;
+ } 
+ #contact-form input,   
+ #contact-form select,   
+ #contact-form textarea { 
+    width:100%;
+    background: #fff;
+    border: 0; 
+    -moz-border-radius: 4px;  
+    -webkit-border-radius: 4px;  
+    border-radius: 4px;
+    margin-bottom: 25px;  
+    padding: 5px;  
+ }  
+ #contact-form input:focus,   
+ #contact-form select:focus,   
+ #contact-form textarea:focus {  
+    background-color: #E5E6E7; 
+ }  
+ #contact-form textarea {
+    width:100%;
+    height: 150px;
+ }
+ #contact-form button[type="submit"] {
+    cursor:pointer;
+    width:100%;
+    border:none;
+    background:#991D57;
+    background-image:linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+    background-image:-moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+    background-image:-webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+    color:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    border-radius:5px;
+ }
+ #contact-form button[type="submit"]:hover {
+    background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+    background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+    background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+ }
+ #contact-form button[type="submit"]:active {
+    box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+ }
+ input:required, textarea:required {  
+    box-shadow: none;
+    -moz-box-shadow: none;  
+    -webkit-box-shadow: none;  
+    -o-box-shadow: none;  
+ } 
+ #contact-form .required {  
+    font-weight:bold;  
+    color: #E5E6E7;      
+ }
+ 
+ /* Hide success/failure message
+    (especially since the php is missing) */
+ #failure, #success {
+    color: #6EA070; 
+    display:none;  
+ }
+ 
+ /* Make form look nice on smaller screens */
+ @media only screen and (max-width: 580px) {
+    #contact-form{
+       left: 3%;
+       margin-right: 3%;
+       width: 88%;
+       margin-left: 0;
+       padding-left: 3%;
+       padding-right: 3%;
+    }
+ }
