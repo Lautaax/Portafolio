@@ -195,6 +195,10 @@ color: #AAC6C6;
 .icono:nth-child(5):hover span {
     background: #6A9AEE !important;
 }
+.icono:nth-child(6):hover span {
+    background: #21fa04 !important;
+}
+
 
 
 .classboton {
@@ -264,6 +268,5 @@ color: #AAC6C6;
         margin: 5%;
         width:450px ;
     }
+}
 
-    
-  }
