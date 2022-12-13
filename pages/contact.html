@@ -1,69 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soy Lautaro Aguilera</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
-    <link href="/node_modules/fontawesome-free-6.2.1-web/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/csscontact.css">
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Contacto</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
+    <link href="../node_modules/fontawesome-free-6.2.1-web/css/all.min.css" rel="stylesheet">
+<link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/css.css">
+<link rel="stylesheet" href="../css/csscontact.css">
+  </head>
+  <body class="d-flex h-100 text-center text-bg-dark">
     
-</head>
-<body>
-    <div class="menuu"> 
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-0">
+    <div>
+      <div class="menuu"> 
         <ul class="mennu">
-            <li class="item "><a href="../index.html" class="nav-link" aria-current="page">Inicio</a></li>
+            <li class="item "><a href="/index.html" class="nav-link" aria-current="page">Inicio</a></li>
             <li class="item"><a href="/pages/trabajos.html" class="nav-link">Trabajos</a></li>
             <li class="item"><a href="/pages/contact.html" class="nav-link">Contacto</a></li>
         </ul>
     </div>
+    </div>
+  </header>
 
+  <main class="px-3">
     <div id="contact-form">
-        <div>
-            <h1>Gracias por entrar a mi portafolio</h1> 
-            <h4>Tienes alguna pregunta o simplemente quieres estar en contacto.</h4> 
-        </div>
-            <p id="failure">Oopsie...message not sent.</p>  
-            <p id="success">Your message was sent successfully. Thank you!</p>
-    
-            <form method="post" action="/">
-                <div>
-                <label for="name">
-                      <span class="required">Nombre: *</span> 
-                    <input type="text" id="name" name="name" value="" placeholder="Jaimito" required="required" tabindex="1" autofocus="autofocus" />
-                </label> 
-                </div>
-                <div>
-                <label for="email">
-                      <span class="required">Email: *</span>
-                    <input type="email" id="email" name="email" value="" placeholder="corre@gmail.com" tabindex="2" required="required" />
-                </label>  
-                </div>
-                <div>		          
-                <label for="subject">
-                <span>Consulta: </span>
-                    <select id="subject" name="subject" tabindex="4">   
-                        <option value="hello">Diseño web</option>
-                        <option value="quote">Re-Style</option>  
-                        <option value="general">Mantenimiento </option>
-                    </select>
-                </label>
-                </div>
-                <div>		          
-                <label for="message">
-                      <span class="required">Message: *</span> 
-                    <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
-                </label>  
-                </div>
-                <div>		           
-                <button name="submit" type="submit" id="submit" >SEND</button> 
-                </div>
-            </form>
-    
-        </div>
+      <div>
+          <h1>Gracias por entrar a mi portafolio</h1> 
+          <h4>Tienes alguna pregunta o simplemente quieres estar en contacto.</h4> 
+      </div>
+          <p id="failure">Oopsie...message not sent.</p>  
+          <p id="success">Your message was sent successfully. Thank you!</p>
+  
+          <form method="post" action="/">
+              <div>
+              <label for="name">
+                    <span class="required">Nombre: *</span> 
+                  <input type="text" id="name" name="name" value="" placeholder="Jaimito" required="required" tabindex="1" autofocus="autofocus" />
+              </label> 
+              </div>
+              <div>
+              <label for="email">
+                    <span class="required">Email: *</span>
+                  <input type="email" id="email" name="email" value="" placeholder="corre@gmail.com" tabindex="2" required="required" />
+              </label>  
+              </div>
+              <div>		          
+              <label for="subject">
+              <span ><h4>Consulta:*</h4> </span>
+                  <select id="subject" name="subject" tabindex="4">   
+                      <option value="hello">Diseño web</option>
+                      <option value="quote">Re-Style</option>  
+                      <option value="general">Mantenimiento </option>
+                  </select>
+              </label>
+              </div>
+              <div>		          
+              <label for="message">
+                    <span class="required">Mensaje: *</span> 
+                  <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+              </label>  
+              </div>
+              <div>		           
+              <button name="submit" type="submit" id="submit" >SEND</button> 
+              </div>
+          </form>
+  
+      </div>
+  </main>
 
-    <ul class="footer ">
+  <footer>
+    <ul class="footer mt-auto text-white-50 ">
         <div></div>
         <li class="icono">
             <a href="#">
@@ -87,9 +100,9 @@
         </li>
         <div></div>
     </ul>
-
-</footer>
+  </footer>
 </div>
-    <script src="/js/js.js"></script>
-</body>
+  <script src="/js/js.js"></script>
+  
+  </body>
 </html>

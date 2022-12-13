@@ -16,8 +16,6 @@ body {
     align-content: flex-end;
 }
 
-
-
 .mennu {
     margin: 5%;
     width: 50vw;
@@ -39,7 +37,7 @@ color:rgb(6, 226, 250) ;
 
 .item {
     margin: auto;
-    color: rgb(248, 9, 9);
+    color: rgb(252, 252, 252);
     font-size: 20px;
     cursor: pointer;
 }
@@ -114,17 +112,15 @@ width: 0%;
 overflow: hidden;
 border-right: .15em solid #52E1E2;
 white-space: nowrap;
-color: white;
+color: #00ff15;
+font-weight: bold;
 animation: typing 4.5s steps(60, end) forwards, blink-caret .85s step-end infinite;
 }
+
 
 .color {
 color: #AAC6C6;
 }
-
-
-
-
 
 @keyframes wave {
     0% {
@@ -145,10 +141,6 @@ color: #AAC6C6;
 }
 
 .footer {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     padding: 0;
 }
@@ -158,7 +150,7 @@ color: #AAC6C6;
     height: 5px;
     background-color: #9581F4;
     margin: auto;
-    position: relative;
+
 
 }
 
@@ -189,11 +181,11 @@ color: #AAC6C6;
 }
 
 .icono:nth-child(2):hover span {
-    background: #2C3456 !important;
+    background: #002fff !important;
 }
 
 .icono:nth-child(3):hover span {
-    background: #6A9AEE !important;
+    background: #06ddfe !important;
 }
 
 .icono:nth-child(4):hover span {
@@ -201,29 +193,11 @@ color: #AAC6C6;
 }
 
 .icono:nth-child(5):hover span {
-    background: #2C3456 !important;
+    background: #6A9AEE !important;
 }
 
-*,
-        *:before,
-        *:after {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            font: var(--font-style);
-            text-decoration: none;
-            color: rgb(250, 246, 246);
-        }
-        
 
-
-
-button:hover {
-    cursor: pointer;
-    box-shadow: 0px 4px 4px #DF00FF;
-}
-
-button {
+.classboton {
     color: rgb(247, 247, 247);
     border-radius: 25px;
     position: absolute;
@@ -236,16 +210,20 @@ button {
     overflow: hidden;
     transition: all 0.5s;
 }
+.classboton:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #DF00FF;
+}
 
-button:hover:before {
+.classboton:hover:before {
     opacity: 1;
     transform: translate(0, 0);
 }
 
-button:before {
+.classboton:before {
     content: attr(data-hover);
     position: absolute;
-    top: 0.6em;
+    top: 0.2em;
     left: 0;
     width: 100%;
     text-transform: uppercase;
@@ -257,21 +235,18 @@ button:before {
     transition: all .3s ease-in-out;
 }
 
-button:hover div {
+.classboton:hover div {
     opacity: 100;
     transform: translate(140%, 0)
 }
 
-button div {
+.classboton div {
     text-transform: uppercase;
     letter-spacing: 3px;
     transition: all .3s ease-in-out;
 }
 
-.titulo{
-    color: #00ff15;
-    font-weight: bold
-    }
+
 
 .botongit{
     color: #060606;
